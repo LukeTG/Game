@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Clicker</title>
+
+<link rel="stylesheet" href="title.css">
+<link rel="stylesheet" href="clicker.css">
+</head>
+
+<body>
+
+<!-- Title Screen -->
+<div class="title-container" id="title-screen">
+    <div class="title">
+        <div class="title-text">
+            <div class="line">The epic and fantastical <span class="emphasis">Fantasy Tale</span></div>
+            <div class="line"><span class="aside">about how</span>I got brought into a <span class="emphasis">New World</span></div>
+            <div class="line"><span class="aside">as the</span><span class="emphasis">CEO</span> of <span class="emphasis">Yggdrasil</span> Company</div>
+            <div class="line"><span class="aside">with the</span>sole mission</div>
+            <div class="line"><span class="aside">of</span>saving the <span class="emphasis">World</span> from <span class="emphasis">Pollution</span></div>
+            <div class="line"><span class="aside">with</span><span class="ultimate" id="tree">TREES</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Clicker Screen -->
+<div class="clicker-container" id="clicker-screen">
+
+    <div class="top">
+        <h1 class="clicker-title">Yggdrasil Inc.</h1>
+    </div>
+
+    <div class="main">
+
+        <!-- LEFT PANEL -->
+        <div class="left">
+            <p class="trees">
+                Trees: <span class="tree-count" id="treeCount">0</span>
+            </p>
+
+            <img 
+                src="Images/Tree.png"
+                alt="Large majestic tree"
+                class="tree-image"
+                id="treeImage"
+            >
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right">
+
+            <!-- Pollenator -->
+            <div id="pollenator" class="pollenator-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="pollenatorCount">0</span> Pollenators
+                        Cost: <span id="pollenatorCost">10</span>
+                    </p>
+                </div>
+                <img src="Images/Pollenator.PNG" alt="Character with a pollen sprayer" class="pollenator-image">
+            </div>
+
+            <!-- Tree Hugger -->
+            <div id="treeHugger" class="treehugger-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="treeHuggerCount">0</span> Tree Huggers
+                        Cost: <span id="treeHuggerCost">25</span>
+                    </p>
+                </div>
+                <img src="Images/Treehugger.PNG" alt="Character hugging a tree" class="treehugger-image">
+            </div>
+
+            <!-- Rain Dancer -->
+            <div id="rainDancer" class="rainDancer-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="rainDancerCount">0</span> Rain Dancers
+                        Cost: <span id="rainDancerCost">100</span>
+                    </p>
+                </div>
+                <img src="Images/RainDancer.PNG" alt="Character dancing to make it rain" class="rainDancer-image">
+            </div>
+
+            <!-- Treemancer -->
+            <div id="treeMancer" class="treemancer-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="treemancerCount">0</span> Treemancers
+                        Cost: <span id="treemancerCost">5000</span>
+                    </p>
+                </div>
+                <img src="Images/Treemancer.PNG" alt="Character with tree magic" class="treemancer-image">
+            </div>
+
+            <!-- Tractor -->
+            <div id="tractor" class="tractor-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="tractorCount">0</span> Tractors
+                        Cost: <span id="tractorCost">15000</span>
+                    </p>
+                </div>
+                <img src="Images/Tractor.PNG" alt="Tree-planting tractor" class="tractor-image">
+            </div>
+
+            <!-- Tree X-Factor -->
+            <div id="treeXFactor" class="treexfactor-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="treeXFactorCount">0</span> Tree X-Factors
+                        Cost: <span id="treeXFactorCost">100000</span>
+                    </p>
+                </div>
+                <img src="Images/TreeXFactor.PNG" alt="Tree X-Factor unit" class="treexfactor-image">
+            </div>
+
+            <!-- Auto Planter -->
+            <div id="autoPlanter" class="autoplanter-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="autoPlanterCount">0</span> Auto Planters
+                        Cost: <span id="autoPlanterCost">1000000</span>
+                    </p>
+                </div>
+                <img src="Images/AutoPlanter.PNG" alt="Automatic tree planter" class="autoplanter-image">
+            </div>
+
+            <!-- Seed Bomber -->
+            <div id="seedBomber" class="seedbomber-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="seedBomberCount">0</span> Seed Bombers
+                        Cost: <span id="seedBomberCost">5000000</span>
+                    </p>
+                </div>
+                <img src="Images/SeedBomber.PNG" alt="Seed-dropping aircraft" class="seedbomber-image">
+            </div>
+
+            <!-- Intercontinental Ballistic Seeder -->
+            <div id="interContinentalBallisticSeeder" class="icbseeder-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="interContinentalBallisticSeederCount">0</span> ICB Seeders 
+                        Cost: <span id="interContinentalBallisticSeederCost">250000000</span>
+                    </p>
+                </div>
+                <img src="Images/ICBSeeder.PNG" alt="Intercontinental seed launcher" class="icbseeder-image">
+            </div>
+
+            <!-- Seed Virus -->
+            <div id="seedVirus" class="seedvirus-container upgrade-container">
+                <div class="textcontainer">
+                    <p class="upgradetext">
+                        <span id="seedVirusCount">0</span> Seed Viruses 
+                        Cost: <span id="seedVirusCost">5000000000</span>
+                    </p>
+                </div>
+                <img src="Images/SeedVirus.PNG" alt="Seed virus unit" class="seedvirus-image">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
